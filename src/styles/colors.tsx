@@ -1,0 +1,14 @@
+export const backgroundColor = '#EAEEF4';
+export const actionBottomBarColor = '#FD1818';
+export const noneBottomBarColor = '#7F92AF';
+export const actionIconColor = '#1611FB';
+export const noneIconColor = '#2F4B61';
+export const white = '#ffffff';
+export const introHomeBackgroundColor = '#0A75FF';
+export const percentTextColor = '#102D58';
+export const hideColor = '#B2C3DD';
+export const noCheckColor = '#DB467C';
+export const yesCheckColor = '#00B7AC';
+export const neitherCheckColor = '#7F92AF';
+export const blackColor = '#102D58';
+export const unselectedColor = '#192C48';

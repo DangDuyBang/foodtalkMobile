@@ -1,0 +1,13 @@
+{
+    "home": {
+        "tab": {
+            "home": "Home",
+            "explore": "Explore",
+            "notify": "Notify",
+            "account": "Account"
+        }
+    },
+    "explore": {},
+    "notify": {},
+    "account": {},
+}
