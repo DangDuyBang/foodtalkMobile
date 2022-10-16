@@ -1,29 +1,30 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import {colors} from '../styles';
-import AuthStore from '../stores/Auth';
+import {colors, texts} from '../styles';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {TAuthStackParamsList} from '../types';
+import LoginForm from '../components/molecules/forms/LoginForm';
 
 const AULogInScreen = () => {
   const navigation = useNavigation<NavigationProp<TAuthStackParamsList>>();
-  const {setIsLogined} = AuthStore;
 
-  const navigateMainTab = () => {
-    setIsLogined(true);
-  };
+  navigation.setOptions({
+    headerShown: false,
+    headerShadowVisible: false,
+  });
 
+  /**
+   * NavigateSignUp() is a function that navigates to the SignUpScreen
+   */
   const navigateSignUp = () => {
     navigation.navigate('SignUpScreen');
   };
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={navigateMainTab}>
-        <Text>AULogInScreen (Click me to come to App)</Text>
-      </TouchableOpacity>
+      <LoginForm />
       <TouchableOpacity onPress={navigateSignUp}>
-        <Text>AUSignUp (Click me to move to Sign up)</Text>
+        <Text style={[texts.textBlue, styles.signUpText]}>New Account?</Text>
       </TouchableOpacity>
     </View>
   );
@@ -37,5 +38,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.backgroundColor,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  signUpText: {
+    marginTop: 15,
   },
 });
