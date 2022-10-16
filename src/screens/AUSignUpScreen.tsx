@@ -3,13 +3,14 @@ import React from 'react';
 import {colors} from '../styles';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
 import {TAuthStackParamsList} from '../types';
+import SignupForm from '../components/molecules/forms/SignupForm';
 
 const AUSignUpScreen = () => {
   const navigation = useNavigation<NavigationProp<TAuthStackParamsList>>;
 
   return (
     <View style={styles.container}>
-      <Text>AUSignUpScreen</Text>
+      <SignupForm />
     </View>
   );
 };

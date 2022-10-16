@@ -2,22 +2,28 @@ import {TextStyle} from 'react-native';
 import {colors} from '.';
 
 export const textNormal: TextStyle = {
-  fontSize: 15,
+  fontSize: 17,
   color: colors.percentTextColor,
 };
 
 export const textTitleTask: TextStyle = {
-  fontSize: 15,
+  fontSize: 17,
   color: colors.noneBottomBarColor,
 };
 
+export const textButtonWhite: TextStyle = {
+  fontSize: 17,
+  color: colors.white,
+  fontWeight: 'bold',
+};
+
 export const textBlue: TextStyle = {
-  fontSize: 15,
+  fontSize: 17,
   color: colors.introHomeBackgroundColor,
 };
 
 export const textHide: TextStyle = {
-  fontSize: 15,
+  fontSize: 17,
   color: colors.hideColor,
 };
 

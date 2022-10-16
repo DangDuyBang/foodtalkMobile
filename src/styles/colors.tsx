@@ -1,5 +1,6 @@
 export const backgroundColor = '#EAEEF4';
 export const actionBottomBarColor = '#FD1818';
+export const primary = '#FD1818';
 export const noneBottomBarColor = '#7F92AF';
 export const actionIconColor = '#1611FB';
 export const noneIconColor = '#2F4B61';
