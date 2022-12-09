@@ -67,7 +67,7 @@ target 'RNMobile' do
   #   `sed -i -e  $'s/__IPHONE_10_0/__IPHONE_12_0/' #{installer.sandbox.root}/RCT-Folly/folly/portability/Time.h`
   # end
 
-IOS_VERSION = '15.5'
+IOS_VERSION = '16.1'
 
 post_install do |installer|
   react_native_post_install(installer)
